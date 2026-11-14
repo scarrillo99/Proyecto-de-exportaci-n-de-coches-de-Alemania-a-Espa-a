@@ -476,6 +476,41 @@ S.append(Paragraph(
     "Fuentes: precios medios de AutoUncle.de y AutoUncle.es (2026); ruta de Project OSRM con datos de © colaboradores de OpenStreetMap; combustible de ADAC, "
     "Selectra y prensa española (9–11 de noviembre de 2026); fotografías de Wikimedia Commons con la licencia indicada en cada una.", SMALL))
 
+# ---- Qué es real y qué falta por comprobar
+S.append(PageBreak())
+S.append(Paragraph("Qué es real y qué falta por comprobar", H1))
+S.append(Paragraph("La lógica es sólida, pero las cifras no están verificadas y nadie ha comprobado todavía que existan coches a estos precios.", SUB))
+OKc, NOc = f"<font color='{G_TX}'><b>Sólido</b></font>", f"<font color='{R_TX}'><b>Sin comprobar</b></font>"
+rows = [["Qué", "Estado", "Detalle"],
+        ["La cuenta del beneficio", OKc, "Venta − compra − IVA sobre el margen − costes. Es aritmética: funciona con cualquier precio real que se le meta."],
+        ["Los kilómetros de la ruta", OKc, "2.269 km de Stuttgart a Marbella, calculados con un planificador de rutas."],
+        ["Los tramos del impuesto de matriculación", OKc, "0 % hasta 120 g/km y 14,75 % desde 200 g/km: coinciden varias fuentes."],
+        ["Los precios de compra y de venta", NOc, "Son medias de anuncios de un agregador, no anuncios reales de mobile.de ni de coches.net. Y un precio de anuncio no es un precio de venta."],
+        ["El ajuste por kilómetros", NOc, "800 € cada 10.000 km es una estimación."],
+        ["Costes del viaje, garantía y preparación", NOc, "En parte estimados; faltan presupuestos reales."],
+        ["Fichas técnicas y consejos de búsqueda", NOc, "Datos de referencia sin fuente contrastada: manda la documentación de cada coche."],
+        ["La parte fiscal", NOc, "IVA sobre el margen y forma jurídica, sin validar por un asesor."]]
+ex = [("BACKGROUND", (1, i), (1, i), G_BG) for i in (1, 2, 3)] + [("BACKGROUND", (1, i), (1, i), R_BG) for i in (4, 5, 6, 7, 8)]
+S.append(tbl(rows, [4.7 * cm, 3.1 * cm, 9.2 * cm], zebra=False, pad=2.0, extra=ex))
+S.append(Paragraph("¿Es rentable? ¿Es posible encontrar coches así?", H2))
+S += bullets([
+    "<b>Rentable, solo con una condición:</b> comprar entre un 11 % y un 16 % por debajo de la media alemana. A precio normal deja entre un 0 % y un 3 %.",
+    "<b>No se sabe si esos coches existen en cantidad suficiente.</b> Un coche sano tan por debajo de mercado es raro: los profesionales alemanes y los importadores que ya hacen esto vigilan los mismos anuncios y llegan antes.",
+    "<b>Muchos de los que aparecen tan baratos tienen un motivo:</b> accidente, historial dudoso, IVA no incluido o estafa.",
+    "<b>Puede haber excepciones</b> (un particular con prisa, un coche con meses publicado), pero no hay datos de su frecuencia."])
+S.append(Paragraph("La prueba antes de poner dinero: tres o cuatro semanas sin comprar", H2))
+rows = [["Paso", "Qué hacer"],
+        ["1", "Poner alertas en mobile.de y AutoScout24 con el precio máximo de cada modelo (o hasta un 5 % por encima, para negociar)."],
+        ["2", "Anotar cada coche que aparezca y pase los cinco filtros: fecha, enlace, año, kilómetros, precio pedido y tope de la tabla."],
+        ["3", "Buscar ese mismo coche en coches.net (mismo año, kilómetros parecidos) y anotar a cuánto se anuncia en España."],
+        ["4", "Al terminar, contar cuántos coches válidos han salido y rehacer los topes con los precios reales."]]
+S.append(tbl(rows, [1.5 * cm, 15.5 * cm], pad=2.0))
+S.append(Spacer(1, 6))
+S.append(box(
+    "<b>Cómo leer el resultado.</b> Si en un mes no aparece ningún coche válido, el planteamiento no es viable y no se ha perdido nada. "
+    "Si aparecen, se hace <b>una sola compra piloto</b> con el de menor riesgo (un híbrido enchufable, que paga 0 % de impuesto de matriculación) "
+    "y se decide si continuar con los números reales de esa operación.", bg=G_BG, border=colors.HexColor("#9ccfb0")))
+
 doc.build(S)
 print("OK")
 for v in VEH:
