@@ -306,19 +306,19 @@ rows = [["Modelo (año)", "Alemania", "España", "Diferencia", "Impuesto", "¿Va
         ["Porsche 718 (2018–2019)", "62.700 €", "62.800 €", "≈ 0 €", "14,75 %", KO],
         ["VW California T6.1 (2021)", "54.715 €", "51.571 €", "−3.144 € (−6 %)", "alto", KO]]
 S.append(tbl(rows, [4.6 * cm, 2.3 * cm, 2.0 * cm, 3.3 * cm, 2.5 * cm, 2.3 * cm], pad=2.2))
-S.append(Paragraph("Precios medios de anuncios (AutoUncle, 2026). El Macan es el más visible en Marbella, pero su impuesto se come toda la diferencia: sale en pérdidas.", SMALL))
+S.append(Paragraph("Precios medios de anuncios (AutoUncle, 2026). El Macan es muy visible en Marbella, pero su impuesto se come la diferencia.", SMALL))
 S.append(Paragraph("Por qué son más baratos en Alemania y más caros en España", H2))
 S += bullets([
     "<b>Hay mucha más oferta en Alemania.</b> Del GLE 350 de 2021 hay 288 anuncios en Alemania frente a 134 en toda España; del V 300 d, 273 frente a 32. "
     "El stock alemán de coches de combustión sube y sus precios bajan, lo que ayuda a negociar.",
     "<b>Alemania produce muchos híbridos enchufables de segunda mano</b> porque allí son coches de empresa habituales; al acabar el contrato salen al mercado en grandes cantidades (contexto general, no medido aquí).",
     "<b>En España el híbrido enchufable usado está muy demandado:</b> sus ventas crecen un 45,6 % y lleva etiqueta CERO, mientras hay pocas unidades.",
-    "<b>La diferencia no es mayor porque muchos ya hacen esto:</b> Alemania es el origen del 44 % de los usados importados en España. Por eso el margen está en la unidad barata, no en el modelo."])
+    "<b>La diferencia no es mayor porque muchos ya hacen esto:</b> Alemania es el origen del 44 % de los usados importados en España."])
 S.append(Paragraph("Dónde venderlos: Marbella, alrededores o toda España", H2))
 S += bullets([
     "<b>No hay prueba de que en Marbella se pague más.</b> Los precios de esta guía son medias de toda España, y los anuncios de Marbella están en esa línea.",
     "<b>Lo que da Marbella es salida:</b> 185 de los 308 Porsche de ocasión de la provincia de Málaga se anuncian allí, y hay comprador extranjero de poder adquisitivo alto.",
-    "<b>Lo sensato es anunciar en portales nacionales</b> (coches.net, AutoScout24) con el coche en Marbella: llega a toda España y Andalucía es la comunidad con más ventas de usados."])
+    "<b>Lo sensato es anunciar en portales nacionales</b> (coches.net, AutoScout24) con el coche en Marbella."])
 S.append(PageBreak())
 
 # ---- 4. Filtros y ejemplo de negociación
