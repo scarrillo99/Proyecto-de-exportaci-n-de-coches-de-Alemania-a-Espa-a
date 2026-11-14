@@ -1,0 +1,291 @@
+{
+ "Stuttgart": {
+  "km": 2269,
+  "hours": 24.0,
+  "bycountry": {
+   "Germany": 244,
+   "France": 849,
+   "Switzerland": 12,
+   "Spain": 1164
+  },
+  "way": [
+   [
+    74,
+    "Karlsruhe",
+    5
+   ],
+   [
+    139,
+    "Estrasburgo",
+    14
+   ],
+   [
+    236,
+    "Basilea",
+    24
+   ],
+   [
+    252,
+    "Mulhouse",
+    2
+   ],
+   [
+    380,
+    "Besanzón",
+    5
+   ],
+   [
+    621,
+    "Lyon",
+    5
+   ],
+   [
+    824,
+    "Orange",
+    2
+   ],
+   [
+    923,
+    "Montpellier",
+    3
+   ],
+   [
+    1014,
+    "Narbona",
+    1
+   ],
+   [
+    1109,
+    "La Jonquera",
+    0
+   ],
+   [
+    1255,
+    "Barcelona",
+    13
+   ],
+   [
+    1348,
+    "Tarragona",
+    3
+   ],
+   [
+    1601,
+    "Valencia",
+    10
+   ],
+   [
+    1828,
+    "Murcia",
+    10
+   ],
+   [
+    2087,
+    "Granada",
+    6
+   ],
+   [
+    2210,
+    "Málaga",
+    7
+   ]
+  ]
+ },
+ "Munich": {
+  "km": 2376,
+  "hours": 25.5,
+  "bycountry": {
+   "Germany": 179,
+   "Austria": 31,
+   "Switzerland": 365,
+   "France": 639,
+   "Spain": 1163
+  },
+  "way": [
+   [
+    586,
+    "Ginebra",
+    4
+   ],
+   [
+    931,
+    "Orange",
+    2
+   ],
+   [
+    1032,
+    "Montpellier",
+    3
+   ],
+   [
+    1123,
+    "Narbona",
+    2
+   ],
+   [
+    1218,
+    "La Jonquera",
+    1
+   ],
+   [
+    1362,
+    "Barcelona",
+    13
+   ],
+   [
+    1458,
+    "Tarragona",
+    3
+   ],
+   [
+    1709,
+    "Valencia",
+    10
+   ],
+   [
+    1936,
+    "Murcia",
+    10
+   ],
+   [
+    2194,
+    "Granada",
+    6
+   ],
+   [
+    2317,
+    "Málaga",
+    7
+   ]
+  ]
+ },
+ "Dusseldorf": {
+  "km": 2345,
+  "hours": 24.9,
+  "bycountry": {
+   "Germany": 80,
+   "Belgium": 206,
+   "France": 1015,
+   "Spain": 1044
+  },
+  "way": [
+   [
+    1077,
+    "Burdeos",
+    6
+   ],
+   [
+    1762,
+    "Madrid",
+    3
+   ],
+   [
+    2091,
+    "Jaén",
+    4
+   ],
+   [
+    2170,
+    "Granada",
+    8
+   ],
+   [
+    2286,
+    "Málaga",
+    7
+   ]
+  ]
+ },
+ "Frankfurt": {
+  "km": 2332,
+  "hours": 24.4,
+  "bycountry": {
+   "Germany": 307,
+   "France": 851,
+   "Switzerland": 12,
+   "Spain": 1163
+  },
+  "way": [
+   [
+    135,
+    "Karlsruhe",
+    3
+   ],
+   [
+    202,
+    "Estrasburgo",
+    14
+   ],
+   [
+    299,
+    "Basilea",
+    25
+   ],
+   [
+    315,
+    "Mulhouse",
+    2
+   ],
+   [
+    443,
+    "Besanzón",
+    5
+   ],
+   [
+    684,
+    "Lyon",
+    5
+   ],
+   [
+    887,
+    "Orange",
+    2
+   ],
+   [
+    986,
+    "Montpellier",
+    4
+   ],
+   [
+    1076,
+    "Narbona",
+    2
+   ],
+   [
+    1172,
+    "La Jonquera",
+    0
+   ],
+   [
+    1318,
+    "Barcelona",
+    13
+   ],
+   [
+    1413,
+    "Tarragona",
+    3
+   ],
+   [
+    1664,
+    "Valencia",
+    10
+   ],
+   [
+    1891,
+    "Murcia",
+    10
+   ],
+   [
+    2150,
+    "Granada",
+    6
+   ],
+   [
+    2273,
+    "Málaga",
+    7
+   ]
+  ]
+ }
+}
